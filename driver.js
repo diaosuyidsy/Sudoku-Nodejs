@@ -1,11 +1,6 @@
 /**
  * Created by diaosuyi on 4/12/17.
  */
-// let FileAPI = require('file-api')
-//     , File = FileAPI.File
-//     , FileList = FileAPI.FileList
-//     , FileReader = FileAPI.FileReader
-//     ;
 let fs = require('fs'),
     readline = require('readline');
 
