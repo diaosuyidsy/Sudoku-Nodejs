@@ -22,3 +22,4 @@ lines.forEach(line => {
 });
 
 // Ready to go
+console.log(sudokuBoard);
