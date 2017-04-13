@@ -21,5 +21,21 @@ lines.forEach(line => {
     }))
 });
 
+let printBoard = () => {
+    let i = 0;
+    sudokuBoard.forEach(row => {
+        let j = 0;
+        row.forEach(ele => {
+            process.stdout.write(`${ele} `);
+            if(j === 2 || j === 5) process.stdout.write('|');
+            j++;
+        });
+        process.stdout.write("\n");
+        if(i === 2 || i === 5) process.stdout.write("------+------+------\n");
+        i++;
+    })
+};
+
 // Ready to go
-console.log(sudokuBoard);
+console.log("Here is the initial board:\n");
+printBoard();
